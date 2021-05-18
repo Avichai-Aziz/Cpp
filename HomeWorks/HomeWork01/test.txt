@@ -1,0 +1,13 @@
+board nice 5 20
+line nice 0 0 19 4 3
+print nice
+fill nice 0 4 2
+fill nice 19 0 7
+print nice
+circle nice 19 0 5 1
+print nice
+board x 2 2
+line x 0 1 1 0 4
+print x
+stamp nice 2 2 x
+print nice
