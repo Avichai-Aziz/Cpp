@@ -1,7 +1,7 @@
 
 
-#ifndef _32_EX5_312391774_316373497_PARSER_H
-#define _32_EX5_312391774_316373497_PARSER_H
+#ifndef PARSER_H
+#define PARSER_H
 #include <iostream>
 #include <cstdlib>
 #include <fstream>
@@ -84,4 +84,4 @@ vector<T> parse_vector(const string& str){
 }
 
 
-#endif //_32_EX5_312391774_316373497_PARSER_H
+#endif //PARSER_H
