@@ -60,7 +60,7 @@ void Parser::translateCommands() {
 
 void Parser::checkCmdInput(const string& command) {
     if(!((command == "string_counter") || (command == "int_counter") || (command == "add_from_file") ||
-    (command == "add_from_string") || (command == "stats") || (command == "most_common")))
+         (command == "add_from_string") || (command == "stats") || (command == "most_common")))
     {
         cerr<< "Error: Unknown command "<<command<<endl;
         exit(-1);
@@ -270,11 +270,11 @@ void Parser::printMostCommon(const string& counterName) {
     }
     else if(isItIntCounter(counterName)) {
         cout << "most common element for counter " << counterName <<" is "
-        << findIntCounter(counterName).most_common() << endl;
+             << findIntCounter(counterName).most_common() << endl;
     }
     else if(isItStringCounter(counterName))
     {
         cout << "most common element for counter " << counterName <<" is "
-         << findStringCounter(counterName).most_common() << endl;
+             << findStringCounter(counterName).most_common() << endl;
     }
 }

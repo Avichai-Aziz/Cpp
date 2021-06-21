@@ -1,5 +1,7 @@
-#ifndef COUNTER_H
-#define COUNTER_H
+
+
+#ifndef HW5_COUNTER_H
+#define HW5_COUNTER_H
 
 #include <vector>
 #include <iostream>
@@ -126,23 +128,23 @@ public:
 
     // prints to the ostream
     void print_to_stream(std::ostream& out){
-       sort();
-       if(size == 0)
-       {
-           out << "{ }";
-       }
-       else{
-           out << "{ ";
-           for (int i = 0; i < size; i++)
-           {
-               out << array[i];
-               if (i != (size - 1))
-               {
-                   out << " ";
-               }
-           }
-           out << " }";
-       }
+        sort();
+        if(size == 0)
+        {
+            out << "{ }";
+        }
+        else{
+            out << "{ ";
+            for (int i = 0; i < size; i++)
+            {
+                out << array[i];
+                if (i != (size - 1))
+                {
+                    out << " ";
+                }
+            }
+            out << " }";
+        }
     }
 
     // prints the most common to the outStream, throws exception whether the array is empty
@@ -178,4 +180,4 @@ std::ostream &operator<<(std::ostream &os, const Pair<K> &pair){
     return os;
 }
 
-#endif //COUNTER_H
+#endif //HW5_COUNTER_H

@@ -1,7 +1,8 @@
 
 
-#ifndef PARSER_H
-#define PARSER_H
+#ifndef HW5_PARSER_H
+#define HW5_PARSER_H
+
 #include <iostream>
 #include <cstdlib>
 #include <fstream>
@@ -75,13 +76,12 @@ vector<T> parse_vector(const string& str){
         ss >> temp;
         if(!ss)
         {
-           cerr << "Error: Read failed" << endl;
-           exit(-6);
+            cerr << "Error: Read failed" << endl;
+            exit(-6);
         }
         vec.push_back(temp);
     }
     return vec;
 }
 
-
-#endif //PARSER_H
+#endif //HW5_PARSER_H
