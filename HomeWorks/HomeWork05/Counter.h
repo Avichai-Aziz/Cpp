@@ -1,5 +1,5 @@
-#ifndef _32_EX5_312391774_316373497_COUNTER_H
-#define _32_EX5_312391774_316373497_COUNTER_H
+#ifndef COUNTER_H
+#define COUNTER_H
 
 #include <vector>
 #include <iostream>
@@ -178,4 +178,4 @@ std::ostream &operator<<(std::ostream &os, const Pair<K> &pair){
     return os;
 }
 
-#endif //_32_EX5_312391774_316373497_COUNTER_H
+#endif //COUNTER_H
